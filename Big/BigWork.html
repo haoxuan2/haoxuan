@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		background-color: #f8f7f6;
+		margin: 0;
+		padding:0;
+	}
+	#center:after{content:"";clear: both;display: block;}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	#head{
+		width:1180px;
+	    margin: 0 auto;
+
+	}
+	#white{
+		background-color: white;
+        width: 100%;
+	}
+	/* #headParent{
+		width: 100%;
+		height: 180px;
+		margin: 0 auto;
+		position: fixed;
+		top:0;
+		background-color: white;
+		z-index: 99;
+	} */
+	#headFirst>p{
+		margin: 0;
+		width: 150px;
+		color: #9a979e;
+	}
+	#headFirst>img{
+		margin-top: 3px;
+		margin-right: 2px;
+	}
+    #headFirst{
+    	height: 40px;
+        width: 1180px;
+        background-color: white;
+    }
+    #headFirst>a{
+    	text-decoration: none;
+    	color: #9a979e;
+    	margin-right: 16px;
+    }
+    #headSecond>#headLeft{
+		float:left;
+	}
+	#headBack>input{
+		height: 40px;
+		width: 500px;
+		border-width: 3px;
+		border-color: #fe6c00;
+		border-style: solid;
+		/* border-radius: 5px; */
+	}
+	#headBack>button{
+		background-color: #fe6c00;
+		border-color: #fe6c00;
+		border-style: solid;
+		height: 40px;
+		width: 84px;
+		margin-left: 0;
+		color:white;
+		font-size: 16px;
+	}
+	#headBack{
+		background-color: #fe6c00; 
+		width: 600px;
+		margin-left: 100px;
+		margin-right: 80px;
+		margin-top: 20px;
+		float: left;
+		border-width: 3px;
+		border-radius: 5px;
+	}
+	.cover{
+		background-color: white;
+		z-index: 99;
+		height: 150px;
+		width: 100%;
+		margin-top: 0;
+		margin: 0 auto;
+	}
+	#us{
+		height: 45px;
+		width:82px;
+		background-color: white;
+		border:1px solid #e6e5e2;
+		margin-top: 20px;
+		padding: 0;
+		float: left;
+		background-color: #fe6c00; 
+		border-radius: 5px;
+		text-align: center;
+		font-size: 15px;
+		color: white;
+	}
+	#earphone{
+		height: 45px;
+		width:82px;
+		background-color: white;
+		border:1px solid #e6e5e2;
+		margin-top: 20px;
+		padding: 0;
+		float: left;
+		border-radius: 5px;
+	}
+	#earphone>p{
+		margin-top: 28px;
+		margin-bottom: 0;
+		color: #9a979e; 
+		font-size: 3px;
+	}
+	#headSecond>ul>li#none{
+    	border-right: none;
+    }
+	#headSecond>ul{
+		display: inline-block;
+		margin-left: 233px;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+    #headSecond{
+        width: 1180px;
+        height: 110px;
+    }
+	#headSecond>ul>li{
+		border-right: 1px solid #ebe7e7; 
+		display: inline-block;
+		font-size: 12px;
+		color:#666560;
+		padding:0 7px; 
+	}
+    #headSecond>ul>li>a{
+    	text-decoration:none;
+    }
+    #headThird{
+    	width:1180px;
+    	margin: 0 auto;
+    }
+    #headThird>ul{
+    	margin-top: 10px;
+    	margin-bottom: 0;
+    	padding: 0;
+    }
+    #headThird>ul>li{
+    	display: inline-block;
+    	width: 115px;
+    	height: 40px;
+    	background-color:white; 
+    	text-align: center;
+    	line-height: 40px;
+    	font-size: 18px;
+    }
+    #headThird>ul>li:hover{
+    	display: inline-block;
+    	width: 115px;
+    	height: 40px;
+    	background-color:#fe6c00;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    #headThird>ul>li:hover>a{
+    	color: white;
+    }
+    #hh{
+    	margin: 0;
+    	border-color:#fe6c00;
+    }
+    #center{
+    	height: 550px;
+    	width: 1180px;
+    	margin: 0 auto;
+    	background-color: #f8f7f6;
+    }
+    #centerFirst{
+    	width: 170px;
+    	height: 425px;
+    	float: left;
+    	border-bottom: 1px solid #fe6c00; 
+    }
+    #centerFirst>ul{
+    	height: 425px;
+    	margin: 0;
+    	padding: 0;
+    }
+    #centerFirst>ul>li{
+    	display: block;
+    }
+    #centerFirst #spe{
+    	margin-top: 0;
+    	padding-top: 25px;
+    	width: 25px;
+    	height: 400px;
+    	font-size: 18px;
+    	color: red;
+    	background-color: #45453e;
+    	text-align: center;
+        float: left;
+    }
+    #centerFirst #menu{
+    	list-style-type: none;
+    	width:140px;
+    	height: 425px;
+    	padding:0;
+    	padding-left: 5px;
+    	float: left;
+    }
+    #centerFirst #menu>li{
+    	font-size: 13px;
+    	line-height: 19px;
+    }
+    #centerFirst>ul#menu{
+    	width:140px;
+
+    }
+    #center#ani{
+    	width: 800px;
+    }
+    #ani{
+    	width: 800px;
+    	height: 365px;
+	    border: 1px solid white;
+	    position: relative;
+	    overflow: hidden;
+	    float: left;
+	}
+    #ani>span{
+	    display: block;
+	    width: 30px;
+	    height: 50px;
+	    background:grey;
+	    font-size: 30px;
+	    position: absolute;
+	    text-align: center;
+	    cursor: pointer;
+	    opacity: 0;
+	    color: #fff;
+	    top: 175px;
+	    line-height: 50px;
+	}
+    #left{
+    	left: 30px;
+    }
+    #right{
+    	right: 30px;
+    }
+    #nav{
+    	position: absolute;
+    	left: 270px;
+    	bottom: 20px;
+    	text-align: center;
+    }
+    .nav>ul{
+    	text-align: center;
+    }
+    .nav>li{
+    	list-style-type: none;
+    	background-color:white;
+    	cursor: pointer;
+    	margin: 0 10px;
+    	border-radius: 50%;
+    	float: left;
+    	width: 20px;
+    	height: 20px;
+    	text-align: center;
+	}
+    .nav .active{
+    	background-color: #fe6c00;
+    }
+    .slider{
+    	width: 6400px;
+    	position: absolute;
+    	left: -800px;
+    }
+    .slide{
+    	width: 800px;
+    	overflow: hidden;
+    	float: left;
+    }
+    .pfr{
+    	float: right;
+    	margin: 0;
+    	margin-top:18px;
+        font-size: 14px;
+    }
+   .pfl{
+    	float: left;
+    	margin-top: 18px;
+    }
+    #centerSecond{
+    	width: 800px;
+    	height: 183px;
+    	float: left;
+    	margin-top: 0;
+    	border-top:3px solid red;
+    }
+    #centerSecond>img{
+    	float: left;
+
+    }
+    #infor{
+    	width: 1180px;
+    	margin: 0 auto;
+    	height: 185px;
+    	background-color: #f8f7f6;
+    }
+    #infor>img{
+    	float: left;
+    }
+    #infor>ul{
+    	padding:0;
+    	margin-left:200px;
+    	width: 760px;
+    	margin-right: 0;
+    }
+    #infor>ul>li{
+    	list-style-type: none;
+    	display: inline-block;
+        text-align: left;
+        height: 135px;
+        width: 117px;
+        margin-right: 5px;
+    }
+    #infor>ul>li>ul{
+    	margin-top: 20px;
+    	margin-bottom: 30px;
+    }
+    #infor>ul>li>ul>li{
+    	font-size: 13px;
+    	list-style-type: none;
+    	line-height: 25px;
+    }
+    .ulFirst{
+    	font-size: 18px;
+    	font-weight: bold;
+    }
+    #link{
+    	width: 1180px;
+    	margin:0 auto;
+    }
+    #link>p{
+    	text-align: center;
+    	font-size: 12px;
+    	color: #9a9791;
+    }
+    #link>ul>li{
+    	list-style-type: none;
+    	display: inline-block;
+    	border-right: 1px solid #d0cdc7; 
+    	width: 70px;
+    	margin-left: 3px;
+    	font-size: 12px;
+    	text-align: center;
+    }
+    #link>ul{
+    	margin-left: 250px;
+    	padding: 0;
+    }
+    #link>ul>li#none{
+    	border-right: none;
+    }
+    #tail{
+    	width: 1180px;
+    	margin: 0 auto;
+    }
+    #message{
+    	height: 365px;
+    	width: 210px;
+    	margin-left: 975px;
+    	background-color: white;
+    }
+    #centerLast{
+    	width: 210px;
+    	height: 183px;
+    	margin-left: 975px;
+    	background-color: white;
+    }
+    #centerLast>p{
+    	font-size: 14px;
+    	float: right;
+    	margin-top: 11px;
+    	margin-right: 20px;
+    }
+    #centerLast>img{
+    	float: left;
+    	margin-top: 13px;
+    	margin-left: 17px;
+    }
+    #centerLast>input{
+    	margin-left: 20px;
+    	margin-top: 5px;
+    }
+    #centerLast>select{
+    	margin-left: 20px;
+    	margin-top: 10px;
+    }
+    #button{
+    	height: 25px;
+    	width: 177px;
+    	background-color: #ff4d04;
+    	border: 1px solid #ff4d04;
+    	border-radius: 5px;
+    	color: white;
+    }
+    #windowFirst{
+    	position: fixed;
+    	height: 120px;
+    	width: 130px;
+    	right:-90px;
+    	top:85px;
+    	z-index: 99;
+    }
+    #windowFirst>img{
+    	float: left;
+    }
+    #wiondowSecond{
+    	position: fixed;
+    	right:-90px;
+    	top:210px;
+    	height: 143px;
+    	width: 130px;
+    	background-color: #ff9260;
+    }
+    #windowThird{
+    	position: fixed;
+    	right:-90px;
+    	top:355px;
+    	height: 150px;
+    	width: 130px;
+    	background-color: #ff9260;
+    }
+    #windowForth{
+    	position: fixed;
+    	right:-90px;
+    	top:510px;
+    	width: 130px;
+    	height: 142px;
+    	background-color: #ff9260;
+    }
+    #windowFirst{
+    	float: top;
+    }
+    #font>a{
+    	text-decoration: none;
+    	color: #9a979e;
+    	margin-right: 8px;
+    	font-size:14px;
+    }
+    #font>img{
+    	margin-right: 5px;
+    }
+    #bb>li{
+    	margin: 10px 0;
+    	list-style-type: none;
+        color: orange;
+        font-size: 14px;
+    }
+    #bb{
+    	padding-left:15px;
+    }
+    #express li{ 
+    	height:28px; 
+        line-height:20px; 
+        font-size:12px; 
+        list-style:none; 
+        color: #fe7403;
+    } 
+    #ul1{ 
+    	height:330px; 
+    	overflow:hidden; 
+    	margin-top:0px; 
+    } 
+    #ulclass{ 
+    height: 375px;
+    width: 210px;
+    margin-left:auto; 
+    margin-right:auto; 
+} 
+#express{ 
+margin-left:-30px; 
+margin-right:10px; 
+margin-bottom:0px; 
+margin-top:0px; 
+} 
+#ulclass div div ul li a{ 
+text-decoration:none; 
+color:#333333; 
+} 
+#ulclass div div ul li a:hover{ 
+text-decoration:underline; 
+}
+
+#h{
+    width: 780px;
+    color: grey;
+} 
+</style>
+</head>
+<body>
+	<div id="parent">
+	
+<div id="white">
+		<div id="head">
+		<div class="cover">
+		<div id="headFirst">
+		<div  id="font"style="width:1180px">
+
+			<a href="" style="margin-right:366px;">帮5买，享帮帮</a>
+			<img src="./img/" alt="">
+			<img src="./img/" alt="">
+			<img src="./img/" alt="">
+			<a href="">登录</a>
+			<a href="">注册</a>
+			<a href="">消息</a>
+			<img src="./img/dingdan.jpg" height="14" width="13" alt=""><a href="">我的订单</a>
+			<a href="">我的收藏</a>
+			<img src="./img/phone.png" height="17" width="10" alt=""><a href="">手机版</a>
+			<a href="">帮钻兑换</a>
+			<a href="">帮5淘</a>
+			<a href="">客户服务</a>
+			<img src="./img/gouwuche.jpg" height="16" width="18" alt=""><a href="">购物车</a><a href="" style="color:red;">0</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+        </div>
+        <div id="headSecond">
+            <img src="./img/logo_03.jpg" alt="" id="headLeft">
+            <div id="headBack">
+			<input type="text" id="input">
+			<button>搜全网</button>
+			</div>
+			<div id="earphone">
+				<p>400-085-0505</p>
+			</div>
+			<div id="earphone">
+				<p>mc@b5m.com</p>
+			</div>
+			<div id="us">
+				<p>常见问题</p>
+			</div>
+			<ul>
+				<li><a href=""><span style="color:red;">洗发护发</span></a></li>
+				<li><a href=""><span style="color:red;">日本纸尿裤</span></a></li>
+				<li><a href="">身体乳</a></li>
+				<li><a href="">内衣文胸</a></li>
+				<li><a href=""><span style="color:#c1d8ff;">iphone&nbsp6s</span></a></li>
+				<li><a href=""><span style="color:#c1d8ff;">ipad&nbspAir2</span></a></li>
+                <li><a href="">牛仔裤</a></li>
+				<li><a href="">奶粉</a></li>
+				<li><a href="">防晒霜</a></li>
+				<li id="none"><a href="">伞</a></li>
+			</ul>
+			
+	    </div>
+	    </div>
+	    <div id="headThird">
+				<ul>
+					<li style="width:170px;"><a href="">全部商品分类</a></li>
+					<li><a href="">帮5赚</a></li>
+					<li><a href="">帮韩品</a></li>
+					<li><a href="">超划算</a></li>
+					<li><a href="">品牌货栈</a></li>
+					<li><a href="">韩国馆</a></li>
+					<li><a href="">帮社区</a></li>
+					<li><a href="">一元兑奖</a><img src="./img/hot.gif" height="22" width="25" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<hr id="hh" />
+</div> 
+		
+		<div id="center">
+			<div id="centerFirst">
+				<ul id="spe">
+					<li>当前搜索电商</li>
+                    <li style="margin-top:15px;">全网</li>
+		        </ul>
+						<ul id="menu">
+							<li><p><a href="">手机</a>&nbsp<a href="">数码</a>&nbsp<a href="">影音</a>&nbsp<a href="">配件</a></p></li>
+							<li><p><a href="">电脑</a>&nbsp<a href="">网络</a>&nbsp<a href="">办公</a>&nbsp<a href="">打印</a></p></li>
+							<li><p><a href="">家电</a>&nbsp<a href="">厨卫</a>&nbsp<a href="">生活</a>&nbsp<a href="">个户</a></p></li>
+							<li><p><a href="">园艺</a>&nbsp<a href="">家具</a>&nbsp<a href="">家纺</a>&nbsp<a href="">家饰</a></p></li>
+							<li><p><a href="">彩妆</a>&nbsp<a href="">面部</a>&nbsp<a href="">身体</a>&nbsp<a href="">香水</a></p></li>
+							<li><p><a href="">男装</a>&nbsp<a href="">女装</a>&nbsp<a href="">内衣</a>&nbsp<a href="">其他</a></p></li>
+							<li><p><a href="">女包</a>&nbsp<a href="">男包</a>&nbsp<a href="">女鞋</a>&nbsp<a href="">男鞋</a></p></li>
+							<li><p><a href="">运动</a>&nbsp<a href="">户外</a>&nbsp<a href="">装备</a>&nbsp<a href="">服饰</a></p></li>
+							<li><p><a href="">儿童</a>&nbsp<a href="">婴儿</a>&nbsp<a href="">食品</a>&nbsp<a href="">玩具</a></p></li>
+							<li><p><a href="">乐器</a>&nbsp<a href="">家宠</a>&nbsp<a href="">收藏</a>&nbsp<a href="">鲜花</a></p></li>
+							<li><p><a href="">保健</a>&nbsp<a href="">理疗</a>&nbsp<a href="">药品</a>&nbsp<a href="">眼镜</a></p></li>
+							<li><p><a href="">果蔬</a>&nbsp<a href="">礼品</a>&nbsp<a href="">粮油</a>&nbsp<a href="">特产</a></p></li>
+							<li><p><a href="">文艺</a>&nbsp<a href="">生活</a>&nbsp<a href="">科技</a>&nbsp<a href="">教育</a></p></li>
+							<li></li>
+						</ul>
+						<p class="pfr" style="margin-right:50px;">什么是帮5购</p>
+			    <img src="./img/dd_03.jpg" height="22" width="22" alt="" class="pfl">
+			    <p class="pfr" style="margin-right:7px;">帮5购提供什么服务</p>
+				<img src="./img/dd_06.jpg" height="22" width="22" alt="" class="pfl" style="margin-right:10px;">
+				<p class="pfr" style="margin-right:7px;">如何开通帮5购服务</p>
+				<img src="./img/dd_08.jpg" height="22" width="22" alt="" class="pfl">
+						</div>
+				
+		
+						
+					
+				
+		
+			
+			<div id="ani">
+				<div class="slider" id="slider">
+			        <div class="slide"><img src="./img/bann6.png" alt=""></div>
+			        <div class="slide"><img src="./img/bann1.jpeg" alt=""></div>
+			        <div class="slide"><img src="./img/bann2.jpeg" alt=""></div>
+			        <div class="slide"><img src="./img/bann3.jpeg" alt=""></div>
+			        <div class="slide"><img src="./img/bann4.jpeg" alt=""></div>
+			        <div class="slide"><img src="./img/bann5.jpeg" alt=""></div>
+			        <div class="slide"><img src="./img/bann6.png" alt=""></div>
+			        <div class="slide"><img src="./img/bann1.jpeg" alt=""></div>
+		        </div>
+		        <span id="left"><</span>
+		        <span id="right">></span>
+		        <ul class="nav" id="nav">
+		            <li class="active">1</li>
+			        <li>2</li>
+			        <li>3</li>
+			        <li>4</li>
+			        <li>5</li>
+			        <li>6</li>
+			    </ul>
+			</div>
+			
+			<div id="centerSecond">
+				<img src="./img/1(1).jpg" height="183" width="200" alt="">
+				<img src="./img/2.jpg" height="183" width="200" alt="">
+				<img src="./img/3(1).png" height="183" width="200" alt="">
+				<a href="Bigtwo.html"><img src="./img/qqq.png" height="183" width="200" alt=""></a>
+			</div>
+			<div id="message">
+			<div style="border-bottom:1px solid #e6e5e2;">
+			<img src="./img/ico-notice.png" height="15" width="16" alt="" style="margin-left:15px;margin-top:15px;margin-right:5px;">
+			<p style="display:inline;color:#fe7403;margin-right:70px;margin-bottom:10px;">帮帮快讯</p><img src="./img/jiantou.jpg" height="9" width="11" alt="">
+			</div>
+			<div id="ulclass"> 
+			<div id="ul1"> 
+			<div id="ul2"> 
+			<ul id="express"> 
+					<li>[公告]&nbsp帮购及VIP服务调整1</li>
+					<li>[公告]&nbsp帮购及VIP服务调整2</li>
+					<li>[公告]&nbsp帮购及VIP服务调整3</li>
+					<li>[公告]&nbsp帮购及VIP服务调整4</li>
+					<li>[公告]&nbsp帮购及VIP服务调整5</li>
+					<li>[公告]&nbsp帮购及VIP服务调整6</li>
+					<li>[公告]&nbsp帮购及VIP服务调整7</li>
+					<li>[公告]&nbsp帮购及VIP服务调整8</li>
+					<li>[公告]&nbsp帮购及VIP服务调整9</li>
+					<li>[公告]&nbsp帮购及VIP服务调整10</li>
+					<li>[公告]&nbsp帮购及VIP服务调整11</li>
+					</div> 
+					<div id="dome2"></div> 
+					</div> 
+					</div> 
+			</div>
+			<div id="centerLast">
+				<img style="float;left;"src="./img/tp-my-phone.png" height="14" width="8" alt="">
+				<p>话费充值&nbsp&<span>(可使用帮钻)</span></p>
+				<input type="text" value="请输入手机号">
+				<br/>
+				<select id="key" name="key" id="" onchange="change(this)">
+					<option value="30" checked>1</option>
+				</select>
+				<p id="get" style="margin-right:120px;">$30</p>
+				<button id="button">充值</button>
+			</div>
+		</div>
+
+		<div id="windowFirst"><img src="./img/consult-s.png" alt=""><br/><img src="./img/xiaobang.png" height="60" width="130" alt=""></div>
+		<div id="wiondowSecond"><img src="./img/youhui.png" height="140" width="60" alt=""></div>
+		<div id="windowThird"><img src="./img/app.png" height="50" width="123" alt="">
+		<img src="./img/serwei.png" height="24" width="24" alt="" style="margin-left:5px;">
+		<img src="./img/erwei.png" height="90" width="90" alt="" style="margin-left:5px;"></div>
+		<div id="windowForth"><img src="./img/cart.png" height="140" width="123" alt=""></div>
+
+		<div id="infor">
+			<img src="./img/loginB.jpg" height="181" width="149" alt="">
+			<img src="./img/erweima.jpg" height="144" width="120" alt="" style="float:right;margin-top:25px;margin-right:50px;">
+			<ul>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">购物指南</a></li>
+						<li><a href="">如何下单</a></li>
+						<li><a href="">帮5购流程</a></li>
+						<li><a href="">订单查询</a></li>
+						<li><a href="">物流配送</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">支付相关</a></li>
+						<li><a href="">支付方式</a></li>
+						<li><a href="">安全设置</a></li>
+						<li><a href="">账户信息</a></li>
+						<li>&nbsp</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">售后服务</a></li>
+						<li><a href="">取消订单</a></li>
+						<li><a href="">申请售后</a></li>
+						<li><a href="">退货流程</a></li>
+						<li><a href="">退款相关</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">VIP服务</a></li>
+						<li><a href="">VIP优惠</a></li>
+						<li><a href="">如何成为VIP</a></li>
+						<li><a href="">超级帮钻</a></li>
+						<li>&nbsp</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">帮韩品</a></li>
+						<li><a href="">韩国正品</a></li>
+						<li><a href="">闪电发货</a></li>
+						<li><a href="">帮韩品售后</a></li>
+						<li>&nbsp</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li style="font-size:16px;font-weight:bold;"><a href="">更多</a></li>
+						<li><a href="">手机APP</a></li>
+						<li><a href="">帮5采APP</a></li>
+						<li><a href="">帮5淘插件</a></li>
+						<li><a href="">其他</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+        <hr id="h" />
+		<div id="link">
+			<ul>
+				<li><a href="">关于帮5买</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">合作商家</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">加入我们</a></li>
+				<li><a href="">移动应用</a></li>
+                <li><a href="">热门</a></li>
+				<li><a href="">广告联盟</a></li>
+				<li id="none"><a href="">使用条款</a></li>
+			</ul>
+			<p>Copyright◎2011-2015 BSM.COM. All rights reserved. Powered by B5Msoft Co,Ltd.</p>
+			<p>增值电信业务经营许可证:沪B2 20130065号I中华人民共和国互联网药品信息服务资格证书(P) 非经营性-2013-0034沪卫(中医网审[2015] 10032号沪ICP备11034776号3 I食品流通许可证:</p>
+			<p>SP3101151410301755</p>
+		</div>
+		<div id="tail">
+			<img src="./img/bo1.gif" height="47" width="47" alt="" style="margin-left:210px;">
+			<img src="./img/bo2.png" height="40" width="112" alt="">
+			<img src="./img/bo3.gif" height="42" width="96" alt="">
+			<img src="./img/bo4.png" height="47" width="127" alt="">
+			<img src="./img/bo5.png" height="40" width="110" alt="">
+			<img src="./img/bo6.png" height="40" width="106" alt="">
+			<img src="./img/bo7.png" height="52" width="150" alt="">
+		</div>
+
+	</div>
+	<script>
+	 var ul1=document.getElementById("ul1"); 
+     var ul2=document.getElementById("ul2"); 
+     var dome2=document.getElementById("dome2"); 
+     var speed=50;
+     dome2.innerHTML=ul2.innerHTML;
+     function moveTop(){ 
+     if(ul2.offsetHeight-ul1.scrollTop<=0){ 
+     	ul1.scrollTop=0; 
+     }else{ 
+     	ul1.scrollTop++; 
+     } 
+ } 
+var myFunction=setInterval("moveTop()",speed); 
+ul1.onmouseover=function(){ 
+clearInterval(myFunction); 
+} 
+ul1.onmouseout=function(){ 
+myFunction=setInterval(moveTop,speed); 
+} 
+
+
+  window.onload=function(){
+  	var cover = document.getElementsByClassName('cover')[0];
+  	window.onscroll=function(){
+  		var st = document.documentElement.scrollTop || document.body.scrollTop;
+  		if(st>170){
+  			cover.style.position='fixed';
+  			cover.style.top=0;
+  			cover.style.width="100%";
+            cover.style.margin="0 auto";
+  		}else{
+  			cover.style.position='static';
+  		}
+  	}
+  }
+    function getStyle(obj, attr){
+	if(obj.currentStyle){
+		return obj.currentStyle[attr];
+	} else {
+		return getComputedStyle(obj, null)[attr];
+	}
+    }
+	var get1 = document.getElementById("windowFirst");
+	var get2 = document.getElementById("wiondowSecond");
+	var get3 = document.getElementById("windowThird");
+	var get4 = document.getElementById("windowForth");
+
+
+
+	function animate(obj,json,callback){
+        	clearInterval(obj.timer);
+        	obj.timer=setInterval(function(){
+        		var flag = true;
+        	for(var attr in json){
+        		if(attr ==='opacity'){
+                    var now=parseInt(getStyle(obj,attr))*100;
+        		}else{
+                    var now=parseInt(getStyle(obj,attr));
+                }
+        		var speed = (json[attr]-now)/8;
+        	    speed = speed>0?Math.ceil(speed):Math.floor(speed);//向上取整和向下取整
+        	    var cur = now+speed;
+        	    if(attr==='opacity'){
+                    obj.style[attr]=cur/100;
+        	    }else{
+                    obj.style[attr]=cur+'px';
+        	    }
+        	    if(getStyle(obj,attr)!==json[attr]){
+        			flag = false;
+        		}
+        	}
+        	if(flag){
+        		clearInterval(obj.timer);
+        	    callback&&callback();
+        	}
+        },30)
+
+        }
+        get1.onmouseover = move1;
+        get1.onmouseout=leave1;
+        get2.onmouseover = move2;
+        get2.onmouseout=leave2;
+        get3.onmouseover = move3;
+        get3.onmouseout=leave3;
+        get4.onmouseover = move4;
+        get4.onmouseout=leave4;
+
+		function move1(){
+			animate(get1,{right:0},function(){
+				console.log(1);
+			});
+
+		}
+		function leave1(){
+			animate(get1,{right:-90},function(){
+				console.log(1);
+			});
+
+		}
+		function move2(){
+			animate(get2,{right:0},function(){
+				console.log(1);
+			});
+
+		}
+		function leave2(){
+			animate(get2,{right:-90},function(){
+				console.log(1);
+			});
+
+		}
+		function move3(){
+			animate(get3,{right:0,},function(){
+				console.log(1);
+			});
+
+		}
+		function leave3(){
+			animate(get3,{right:-90},function(){
+				console.log(1);
+			});
+
+		}
+		function move4(){
+			animate(get4,{right:0},function(){
+				console.log(1);
+			});
+
+		}
+		function leave4(){
+			animate(get4,{right:-90},function(){
+				console.log(1);
+			});
+
+		}
+
+
+    // box.onfocus=function(){
+    //     var timer=setInterval(function(){
+    //     	var now=parseInt(getStyle(box,'right'));
+    //     	console.log(now);
+    //     	// var speed = (0-now)/8;
+    //     	// speed = speed>0?Math.ceil(speed):Math.floor(speed);//向上取整和向下取整
+    //     	box.style.right=now+100+'px';
+    //     		// if(parseInt(getStyle(box,'right'))==200){
+    //     		//   	clearInterval(timer);
+    //     		// }
+
+    //     	},30)
+    //     }
+	var key="";
+	var get = document.getElementById("get");
+    function change(that){
+        get.innerHTML="$"+that.value;
+
+    }
+	var key=document.getElementById("key");
+	key.onfocus=function(){
+		var option='';
+		for(var i=1;i<31;i++){
+			option+="<option value="+i+">"+i+"</option>";
+		}
+		key.innerHTML=option;
+    }
+  //   var bb = document.getElementById("bb");
+  //   var child= document.getElementById('bb').children;
+  //   var time;
+  //   var index = 1;
+  //   for( var i=0; i<child.length; i++ ){
+		// 	child[i].index = i;
+		// 	child[i].onclick = function(){
+		// 		index = this.index+1;
+		// 		animate(bb,{top:-19*index});
+		// 	}
+		// }
+		// time = setInterval(nextli, 3000);
+		// function nextli(){
+		// 	index++;
+		// 	animate(bb,{left:-19*index},function(){
+		// 		if(index==12){
+		// 			slider.style.left = '-19px';
+		// 			index = 1;
+		// 		}
+		// 	});
+		// }
+	    var box = document.getElementById('ani');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+	    box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-800*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==7){
+					slider.style.left = '-800px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==0){
+					slider.style.left = '-4800px';
+					index = 6;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >6 ){
+				oNavlist[0].className= "active";
+			}else if(index<=0){
+				oNavlist[5].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function getStyle(obj, attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			} else {
+				return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+		    var isStop = true;
+		    for(var attr in json){
+			    var now = 0;
+			    if(attr == 'opacity'){
+				    now = parseInt(getStyle(obj,attr)*100);
+			    }else{
+				    now = parseInt(getStyle(obj,attr));
+			    }
+			    var speed = (json[attr] - now) / 8;
+			    speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			    var cur = now + speed;
+			    if(attr == 'opacity'){
+				    obj.style[attr] = cur / 100;
+			    }else{
+				    obj.style[attr] = cur + 'px';
+			    }
+			    if(json[attr] !== cur){
+				    isStop = false;
+			    }
+		    }
+		    if(isStop){
+			    clearInterval(obj.timer);
+			    callback&&callback();
+		    }
+	    }, 30)
+    }
+	</script>
+</body>
+</html>
